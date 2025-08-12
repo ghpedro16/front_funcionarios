@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    background-color: gray;
+    height: 100vh;
+    place-content: center;
+
+}
+
+.quadro{
+    display: flex;
+    background-color: white;
+    width: 1000px;
+    height: 300px;
+    gap: 50px;
+
+}
+
+.cards{
+    display: flex;
+    background-color: white;
+    width: 280px;
+    height: 300px;
+}
