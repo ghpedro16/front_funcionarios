@@ -2,18 +2,22 @@
 
 import funcionarios from "./funcionarios.json" with {type: "json"}
 
-function criarFuncionario (srcImagens){
+function criarFuncionario (funcionario){
     const cards = document.createElement('div')
-    const quadro = document.getElementById('quadro')
-    const img = document.createElement('img')
-    const nome = document.createElement('h2')
-    const cargo = document.createElement('spam')
     cards.classList.add('cards')
+
+    const nome = document.createElement('h1')
+    nome.textContent = funcionario.nome
+
+    const cargo = document.createElement('span')
+    cargo.textContent = funcionario.cargo
+
+    const img = document.createElement('img')
     img.classList.add('img')
-    img.src = srcImagens.imagem
-    quadro.appendChild(cards)
-    cards.appendChild(img)
-    
+    img.src = funcionario.imagem
+
+    document.getElementById('quadro').appendChild(cards)
+    cards.append(img, nome, cargo)
 }
 
 function carregarFuncionarios (){

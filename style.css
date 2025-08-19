@@ -6,10 +6,9 @@
 
 body{
     display: grid;
-    background-color: gray;
+    background-color: white;
     height: 100vh;
     place-content: center;
-
 }
 
 .quadro{
@@ -18,12 +17,28 @@ body{
     width: 1000px;
     height: 300px;
     gap: 50px;
-
 }
 
 .cards{
     display: flex;
-    background-color: white;
-    width: 280px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+img{
+    margin-top: 20px;
+    width: auto;
+    height: 50%;
+    border-radius: 100px / 140px;
+}
+
+.nome{
+    text-align: center;
+    color: black;
 }
